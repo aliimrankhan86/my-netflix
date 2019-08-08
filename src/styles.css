@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.movie {
+  display: inline-block;
+  margin: 10px;
+}
+
+.movie img {
+  display: inline-block;
+  height: 125px;
+  width: 130px;
+  -webkit-filter: none;
+  filter: none;
+  transition: all .3s ease-in-out;
+}
+
+.movie img:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  cursor: pointer;
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+.movie p {
+  text-align: center;
+}
+
+.searchresults {
+  width: 75%;
+  float: left;
+  color: white;
+  background: black;
+}  
+
+#searchbar {
+  padding: 10px;
+  width: 400px;
+  margin: 10px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 0.1rem solid red;
+  outline: none;
+}
+
+#searchbar::after {
+  content: " - Remember this";
+  color: red;
+}
+
