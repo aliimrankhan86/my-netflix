@@ -29,7 +29,6 @@ export default class Search extends React.Component {
                 <div className="movie" key={item.imdbID}>
                     <img src={item.Poster} alt={item.Title} />
                     <p>{item.Title}</p>
-
                 </div>
             )
         })
